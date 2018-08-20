@@ -23,7 +23,15 @@
       <a-entity id="sky" geometry="primitive: sphere; radius: 5000"
                 material="shader: gradient; topColor: 235 235 245; bottomColor: 185 185 210"
                 scale="-1 1 1"></a-entity>
-      <a-text value="Hello, World!"></a-text>
+      <!-- Spacing. -->
+
+      <a-entity mixin="marker" position="-1 2.5 0.01"></a-entity>
+
+      <a-entity position="-1 2.5 0"
+
+                text="width: 2; color: white; value: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam">
+
+      </a-entity>
       <a-entity id="light" light="type: ambient; color: #888"></a-entity>
     </a-scene>
   </body>
