@@ -12,6 +12,8 @@
     <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
       <a-camera id="camera" wasd-controls-enabled="true" cursor="rayOrigin: mouse"></a-camera>
       <a-sky color="#24CAFF"></a-sky>
+      <a-entity oculus-touch-controls="hand: left"></a-entity>
+      <a-entity oculus-touch-controls="hand: right"></a-entity>
       <a-entity
         id="dialog"
         position="0 0 -2"
