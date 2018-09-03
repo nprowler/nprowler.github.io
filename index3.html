@@ -11,7 +11,11 @@
   <body>
     <a-scene inspector="url: https://aframe.io/releases/0.4.0/aframe-inspector.min.js">
       <a-camera id="camera" wasd-controls-enabled="true" cursor="rayOrigin: mouse"></a-camera>
-      <a-sky color="#24CAFF"></a-sky>
+   <!--   <a-sky color="#24CAFF"></a-sky> -->
+        <a-assets>
+    <img id="sky" src="../assets/GeorgeRedHawk.gif">
+  </a-assets>
+  <a-sky src="#sky"></a-sky>
       <a-entity oculus-touch-controls="hand: left"></a-entity>
       <a-entity oculus-touch-controls="hand: right"></a-entity>
       <a-entity
