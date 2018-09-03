@@ -41,6 +41,27 @@
           dialogBoxColor: #964f00;
           "></a-entity>
     </a-scene>
+    <div>
+<a id="impulseButton">Move</a>
+</div>
+ <script>
+   $(document).ready(function(){
+  $("#impulseButton").on("click",function(){
+    applyImpulse();
+  });
+
+function applyImpulse(){
+    var x = 0;
+    var y = 0;
+    var z = 1;
+    var el = $('#cameraWrapper')[0];
+    el.body.applyImpulse(
+       new CANNON.Vec3(x,y,z),
+       new CANNON.Vec3().copy(el.body.position)
+    );
+  }
+});
+    </script>
 <script>
   // `click` event emitted by browser on mouse click.
 document.querySelector('p').addEventListener('click', function (evt) {
