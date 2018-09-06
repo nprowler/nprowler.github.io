@@ -45,10 +45,13 @@
       
   <a-assets>
     <img id="sky" src="../assets/GeorgeRedHawk.gif">
+    <img id="room" src="https://aframe.io/sample-assets/assets/images/envmap/2294472375_24a3b8ef46_o.jpg" crossorigin="anonymous">
   </a-assets>
       <a-entity laser-controls="hand: right"></a-entity>
       <a-entity hand-controls controller-cursor raycaster="far: 2"></a-entity>
-  <a-sky src="#sky"></a-sky>
+  <!-- <a-sky src="#sky"></a-sky> -->
+  <a-sky src="#sky" material="color:#FFF;side:back;shader:flat;npot:true;src:#room;height:256" geometry="primitive:sphere;radius:5000;segmentsWidth:64;segmentsHeight:32" scale="-1 1 1"></a-sky>
+      
       <a-entity oculus-touch-controls="hand: left"></a-entity>
       <a-entity oculus-touch-controls="hand: right"></a-entity>
       <a-entity
